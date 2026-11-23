@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Bird checklist · Eddy Kadi: Field Notes</title>
+<meta name="description" content="Eddy Kadi: Field Notes. Birds, mammals, reptiles and stories from the field, with a species checklist. Carnets de terrain : oiseaux, mammifères, reptiles et récits.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;0,8..60,700;1,8..60,400;1,8..60,500&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="assets/css/site.css?v=20261119b">
+</head>
+<body>
+<div id="site-header"></div>
+<main id="main" data-page="checklist">
+  <header class="page-head">
+    <div class="page-head-photo" id="cl-photo"></div>
+    <div class="wrap">
+      <p class="eyebrow" data-t="nav.birds"></p>
+      <h1 data-t="checklist.title"></h1>
+      <p data-t="checklist.sub"></p>
+      <div class="page-stats" id="cl-stats"></div>
+    </div>
+  </header>
+
+  <section class="section section-tight">
+    <div class="wrap">
+      <form class="filters" id="cl-filters" autocomplete="off">
+        <label class="field field-grow">
+          <span data-t="checklist.search"></span>
+          <input type="search" id="cl-q" data-ph="checklist.searchPh">
+        </label>
+        <label class="field">
+          <span data-t="checklist.show"></span>
+          <select id="cl-status">
+            <option value="all" data-t="checklist.all"></option>
+            <option value="photo" data-t="checklist.photographed"></option>
+            <option value="nophoto" data-t="checklist.notYet"></option>
+          </select>
+        </label>
+        <label class="field">
+          <span data-t="checklist.sort"></span>
+          <select id="cl-sort">
+            <option value="taxo" data-t="checklist.taxo"></option>
+            <option value="alpha" data-t="checklist.alpha"></option>
+          </select>
+        </label>
+      </form>
+      <div class="cl-tools">
+        <p class="cl-count" id="cl-count" aria-live="polite"></p>
+        <div class="cl-fold" id="cl-tools-fold">
+          <button type="button" class="link-btn" id="cl-expand" data-t="checklist.expand"></button>
+          <button type="button" class="link-btn" id="cl-collapse" data-t="checklist.collapse"></button>
+        </div>
+      </div>
+      <div class="checklist" id="checklist-body"></div>
+    </div>
+  </section>
+</main>
+<div id="site-footer"></div>
+<script src="assets/js/content.js?v=20261119b"></script>
+<script src="assets/js/i18n.js?v=20261119b"></script>
+<script src="assets/js/app.js?v=20261119b"></script>
+</body>
+</html>
