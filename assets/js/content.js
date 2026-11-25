@@ -53,6 +53,7 @@ window.FAMILIES = [
   { id: "phasianidae", sci: "Phasianidae", en: "Pheasants, francolins and allies", fr: "Faisans, francolins et alliés", hue: 25 },
   { id: "pteroclidae", sci: "Pteroclidae", en: "Sandgrouse",  fr: "Gangas",           hue: 42 },
   { id: "otididae",    sci: "Otididae",    en: "Bustards",    fr: "Outardes",         hue: 38 },
+  { id: "cuculidae",   sci: "Cuculidae",   en: "Cuckoos",     fr: "Coucous",          hue: 140 },
   { id: "burhinidae", sci: "Burhinidae", en: "Thick-knees", fr: "Œdicnèmes", hue: 40 },
   { id: "haematopodidae", sci: "Haematopodidae", en: "Oystercatchers", fr: "Huîtriers", hue: 10 },
   { id: "jacanidae",   sci: "Jacanidae",   en: "Jacanas",     fr: "Jacanas",          hue: 90 },
@@ -97,6 +98,8 @@ window.BIRDS = [
     first: "2012-04-17", where: "Kalahari Anib Lodge, Hardap, Namibia", gps: "-24.4303, 18.1005", checklist: "S402447854" },
   { id: "ruppells-bustard", family: "otididae", en: "Rüppell's Bustard", fr: "Outarde de Rüppell", sci: "Heterotetrax rueppelii",
     first: "2012-04-20", where: "Erongo, Namibia", gps: "-21.2923, 14.5705", checklist: "S406515323" },
+  { id: "diederik-cuckoo", family: "cuculidae", en: "Diederik Cuckoo", fr: "Coucou didric", sci: "Chrysococcyx caprius",
+    first: "2017-01-07", where: "Gammams Water Care Works, Khomas, Namibia", gps: "-22.5347, 17.0298", checklist: "S412999350" },
   { id: "eurasian-whimbrel", family: "scolopacidae", en: "Eurasian Whimbrel", fr: "Courlis corlieu", sci: "Numenius phaeopus",
     first: "2025-12-03", where: "Diaz Point, Lüderitz, Namibia", gps: "-26.6354, 15.0889", checklist: "S407498176" },
   { id: "wood-sandpiper", family: "scolopacidae", en: "Wood Sandpiper", fr: "Chevalier sylvain", sci: "Tringa glareola",
@@ -166,7 +169,9 @@ window.BIRDS = [
   { id: "yellow-billed-oxpecker", family: "buphagidae", en: "Yellow-billed Oxpecker", fr: "Piqueboeuf à bec jaune", sci: "Buphagus africanus",
     first: "2019-07-30", where: "Kunene, Namibia", gps: "-19.1705, 13.9901", checklist: "S402709233" },
   { id: "sociable-weaver", family: "ploceidae", en: "Sociable Weaver", fr: "Républicain social", sci: "Philetairus socius",
-    first: "2012-04-17", where: "Kalahari Anib Lodge, Hardap, Namibia", gps: "-24.4303, 18.1005", checklist: "S410226360" }
+    first: "2012-04-17", where: "Kalahari Anib Lodge, Hardap, Namibia", gps: "-24.4303, 18.1005", checklist: "S410226360" },
+  { id: "southern-red-bishop", family: "ploceidae", en: "Southern Red Bishop", fr: "Euplecte ignicolore", sci: "Euplectes orix",
+    first: "2017-01-07", where: "Gammams Water Care Works, Khomas, Namibia", gps: "-22.5347, 17.0298", checklist: "S412998225" }
 ];
 
 /* ---------------------------------------------------------------------
@@ -334,6 +339,12 @@ window.PHOTOS = [
   { id: "reed-cormorant-01", species: "reed-cormorant", src: "photos/birds/reed-cormorant-01.jpg", orient: "landscape", date: "2026-09-28", place: "Caprivi Mutoya Lodge, Zambezi, Namibia", gps: "-17.5566, 24.4740",
     caption: { en: "Perched on a bare twig among green leaves.",
                fr: "Perché sur une brindille nue, parmi les feuilles vertes." } },
+  { id: "diederik-cuckoo-01", species: "diederik-cuckoo", src: "photos/birds/diederik-cuckoo-01.jpg", orient: "landscape", date: "2017-01-07", place: "Gammams Water Care Works, Windhoek, Namibia", gps: "-22.5347, 17.0298",
+    caption: { en: "A male on a bare branch, glossy green above with a red eye-ring.",
+               fr: "Un mâle sur une branche nue, vert métallique dessus, l'œil cerclé de rouge." } },
+  { id: "southern-red-bishop-01", species: "southern-red-bishop", src: "photos/birds/southern-red-bishop-01.jpg", orient: "landscape", date: "2017-01-07", place: "Gammams Water Care Works, Windhoek, Namibia", gps: "-22.5347, 17.0298",
+    caption: { en: "A breeding male in full red and black, perched among thorns.",
+               fr: "Un mâle nuptial, rouge vif et noir, perché parmi les épines." } },
   { id: "african-darter-01", species: "african-darter", src: "photos/birds/african-darter-01.jpg", orient: "landscape", date: "2026-09-29", place: "Chobe River (boat trip), Botswana", gps: "-17.8104, 25.1429",
     caption: { en: "Perched on a dead branch on the riverbank.",
                fr: "Perché sur une branche morte, sur la berge." } },
